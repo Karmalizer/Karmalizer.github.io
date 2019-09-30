@@ -80,7 +80,7 @@ div#comics{
   background-color: white;
   width: 770px;
   grid-column: auto;
-  font-family: serif;
+  font-family: sans-serif;
   font-weight: bold;
 }
 div#comics a{
