@@ -11,14 +11,25 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+body{
+  text-align: center;
+  width: 780px;
+  background-color: #96ABC8
 
+}
 section {
     background-color: aqua;
 }
-
+#headline{
+  font-size: 21px;
+  font-weight: bold;
+}
 article {
     background-color: white;
     text-align: center;
+    border-radius: 10px;
+    border:2px solid black;
+    font-family: sans-serif;
 
 }
 
@@ -28,8 +39,52 @@ footer {
     grid-column-end: 3;
 }
 
+div#left{
+  background-color: white;
+  width: 150;
+  height: 260;
+  padding: 0px 0px 0px 40px;
+  border-radius: 10px;
+  border:2px solid black;
+  margin:1px;
+  font-family: sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+  line-height: 1.5;
+}
+div#right {
+  background-color: white;
+  width: 550;
+  height: 232;
+  padding: 15px 0px 15px 15px;
+  border-radius: 10px;
+  border:2px solid black;
+  display: inline-block;
+}
+#book{
+
+}
+div#top-right{
+  display: inline-block;
+  height: 90;
+  text-align: left;
+}
+span#motto{
+  padding: 20px;
+  display: inline-block;
+  font-size: 17px;
+  font-style: italic;
+  font-weight: 600;
+  vertical-align: top;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
 div#content {
     display: grid;
+    display: block;
     grid-template-columns: 1fr 4fr;
 }
 
