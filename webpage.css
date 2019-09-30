@@ -62,9 +62,10 @@ div#left{
   line-height: 1.5;
   float: left;
   grid-column: 1;
-
 }
-
+div#right a{
+ color: #96A8C8;
+}
 div#right {
 
   width: 550;
@@ -79,6 +80,7 @@ div#right {
   background-color: white;
 }
 div#comics{
+  color: #96A8C8;
   border-radius: 10px;
   border:2px solid black;
   background-color: white;
@@ -86,8 +88,9 @@ div#comics{
   grid-column: auto;
   font-family: serif;
   font-weight: bold;
-  color: #96A8C8;
-
+}
+div#comics a{
+    color: #96A8C8;
 }
 #book{
   padding: 0px;
