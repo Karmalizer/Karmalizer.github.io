@@ -16,7 +16,6 @@ function filter(obj){
     while(counter<4){
       var entry = words[Math.floor(Math.random()*(words.length))];
       if((entry.length <= max) && (entry.length >= min)) {
-        entry+=" ";
         password+=entry;
         counter++;
       }
@@ -53,7 +52,7 @@ function filter(obj){
       }
       password = par.join('');
     }
-    if(password.length < length){
+    if(password.length <= length){
       array.push(password);
       wordcheck++;
     }
