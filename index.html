@@ -1,51 +1,26 @@
-<html>
+<!DOCTYPE html>
 <head>
-  <link rel="stylesheet" href="proj3.css">
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1kPG9I5B9X_ew1SddKZ3QFALTPLB4pIk&libraries=places"></script>
+  <script src="midterm.js"></script>
+  <link rel="stylesheet" href="midterm.css">
 </head>
 <header>
-  XKCD Password Generator
+  Local landmark info
 </header>
 <body>
     <main>
+    <label for ="name"> Zip Code </label>
+    <input type="text" id = "name" size="10">
     <div>
-    <label for="min">Minimum word length</label>
-    <select id="min">
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-    </select>
+      <button onclick="wsearch()">Submit</button>
     </div>
     <div>
-    <label for="max">Maximum word length</label>
-    <select id="max">
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-    </select>
-    </div>
-    </div>
-    <div>
-    <label for ="length"> Max length </label>
-    <input type="text" id = "length" size="30">
-    </div>
-    <div>
-    <input type="checkbox" id = "easy" name="easy">
-    <label for ="easy">Easy remember</label>
-    </div>
-    <div>
-    <input type="checkbox" id = "sub" name="sub">
-    <label for ="sub">Number substitutions</label>
-    </div>
-    <div>
-      <button onclick="filter(this)">Submit</button>
-    </div>
-    <div>
-      Possible Passwords
+      Possible Passwords:
       <ul id="list"></ul>
     </div>
 
     </main>
-<script src="proj3.js"></script>
+
 
 </body>
 </html>
