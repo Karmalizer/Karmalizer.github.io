@@ -1,1 +1,13 @@
 
+header{
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+}
