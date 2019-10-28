@@ -10,7 +10,6 @@ function wsearch(){
   var wurl = 'https://en.wikipedia.org/w/api.php?action=opensearch&search='+name;
   fetch(wurl, {
     method: 'GET',
-    enable: cors
   }).then(function(response){
 
     wres = response.json();
