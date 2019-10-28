@@ -9,7 +9,8 @@ function wsearch(){
   name = name.replace(' ', '%20');
   var wurl = 'https://en.wikipedia.org/w/api.php?action=opensearch&search='+name;
   fetch(wurl, {
-    method: 'GET'
+    method: 'GET',
+    enable: cors
   }).then(function(response){
 
     wres = response.json();
