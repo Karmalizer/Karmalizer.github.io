@@ -4,7 +4,7 @@ var url;
 function wsearch(){
   var name = document.querySelector('#name').value;
   name = name.replace(' ', '%20');
-  var wurl = 'https://en.wikipedia.org/w/api.php?action=opensearch&search='+name;
+  var wurl = 'https://cors-anywhere.herokuapp.com/https://en.wikipedia.org/w/api.php?action=opensearch&search='+name;
   fetch(wurl)
   .then(function(response){
     return response.json();
