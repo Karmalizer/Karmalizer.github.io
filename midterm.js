@@ -1,6 +1,6 @@
 
 var url;
-
+var img = new Image();
 function wsearch(){
   var name = document.querySelector('#name').value;
   name = name.replace(' ', '%20');
@@ -20,12 +20,13 @@ function create(src){
   var curl = 'https://api.qrserver.com/v1/create-qr-code/?data=' +url + '&size=100x100';
   fetch(curl)
   .then(function(response){
-    var img = document.createElement('img');
-    var text = document.createElement('text');
     img.src = curl;
+    document.getElementById('p1').appendChild(img);
+    var text = document.createElement('text');
+    var oldtext = document.getElementById('p2');
+    oldtext.innerHTML='';
     text.innerHTML = 'Searches generate QR for most relevant article';
     console.log(img);
-    document.getElementById('p1').appendChild(img);
     document.getElementById('p2').appendChild(text);
   })
 }
