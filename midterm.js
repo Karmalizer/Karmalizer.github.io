@@ -21,8 +21,11 @@ function create(src){
   fetch(curl)
   .then(function(response){
     var img = document.createElement('img');
+    var text = document.createElement('text');
     img.src = curl;
+    text.innerHTML = 'Searches generate QR for most relevant article';
     console.log(img);
     document.getElementById('p1').appendChild(img);
+    document.getElementById('p2').appendChild(text);
   })
 }
